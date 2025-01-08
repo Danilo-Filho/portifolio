@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo{
+    display: flex;
+    width: 256px;
+    height: 70px;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+header a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+header nav{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 30px 10px 0;
+    gap: 20px;
+}
+
+header nav a div i{
+    margin-right: 10px;
+}
+
+header nav a div:hover{
+    color: #28FCB5;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom left, #28FCFC, #2876FC);
+}
+
+.modal{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    animation-name: darker;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes darker{
+    from {background-color: rgba(0, 0, 0, 0.3);}
+    to {background-color: rgba(0, 0, 0, 0.0);}
+}
+
+#about {
+    padding: 70px 20px 0 20px;
+    width: 80%;
+    height: 100vh;
+}
+
+#contact{
+    width: 100%;
+    height: 300px;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer p{
+    margin: 0 10px;
+}
