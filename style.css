@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,700&family=Questrial&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     border: none;
     text-decoration: none;
     font-size: 1.2rem;
-    font-family: sans-serif;
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 header{
@@ -48,6 +52,7 @@ header nav a div i{
 
 header nav a div:hover{
     color: #28FCB5;
+    transform: scale(1.1);
 }
 
 .main{
@@ -64,6 +69,10 @@ header nav a div:hover{
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 @keyframes darker{
@@ -77,9 +86,51 @@ header nav a div:hover{
     height: 100vh;
 }
 
+#about h1{
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+#about .about-container .info-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.info-block p{
+    width: 60%;
+    text-align: justify;
+}
+
+.resume-block{
+    padding: 20px 0;
+}
+
+.skill-block ul{
+    list-style: square inside;
+    margin-left: 20px;
+}
+
 #contact{
-    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
     height: 300px;
+    margin: 30px 0;
+}
+
+#contact h1{
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+.contacts-container ul{
+    list-style: square inside;
+    margin-left: 20px;
 }
 
 footer{
