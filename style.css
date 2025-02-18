@@ -133,6 +133,56 @@ header nav a div:hover{
     margin-left: 20px;
 }
 
+.contacts-container ul li{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px;
+}
+
+.contacts-container a{
+    color: #FFF;
+}
+
+
+
+.contacts-container img {
+    transition: filter 0.3s ease-in-out;
+}
+
+.wp-icon:hover {
+    filter: invert(38%) sepia(76%) saturate(300%) hue-rotate(90deg); /* Verde (exemplo) */
+}
+
+#wp-li:hover {
+    color: #4CCA5B;
+    text-shadow: #000 1px 1px;
+}
+
+#gh-li:hover {
+    color: #5C6BC0;
+    text-shadow: #000 1px 1px;
+}
+
+#in-li:hover {
+    color: #0077B5;
+    text-shadow: #000 1px 1px;
+}
+
+.gh-icon:hover {
+    filter: invert(20%) sepia(96%) saturate(300%) hue-rotate(220deg); /* Azul */
+}
+  
+.in-icon:hover {
+    filter: invert(50%) sepia(90%) saturate(300%) hue-rotate(180deg); /* Vermelho */
+}
+
+/* 
+wpp = #4CCA5B
+git = #5C6BC0
+lkd = #0077B5 */
+
 footer{
     width: 100%;
     height: 50px;
